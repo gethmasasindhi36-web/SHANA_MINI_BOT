@@ -82,7 +82,7 @@ const config = {
     ],
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94761480834',
+    OWNER_NUMBER: '0764104588',
     CHANNEL_LINK: 'https://files.catbox.moe/3pkc0h.jpg'
 };
 
@@ -756,9 +756,9 @@ async function EmpirePair(number, res) {
                     await socket.sendMessage(userJid, {
                         image: { url: config.AKIRA_IMG },
                         caption: formatMessage(
-                            '`*↳ ❝ [🎀 𝗪𝗲𝗹𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝗔𝗸𝗶𝗿𝗮 𝗠𝗜𝗡𝗜 🎀] ¡! ❞*`',
+                            '`*↳ ❝ [🎀 𝗪𝗲𝗹𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰  🎀] ¡! ❞*`',
                             `╭─────⊹₊⟡⋆ 𝐈𝐧𝐟𝐨 ⋆⟡₊⊹─────<𝟑 .ᐟ\n┊ 𝜗𝜚⋆ : 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 - V1.0.0\n┊ 𝜗𝜚⋆ : 𝙽𝚄𝙼𝙱𝙴𝚁 - ${number}\n┊ 𝜗𝜚⋆ : 𝙾𝚆𝙽𝙴𝚁 - 𝐱 𝐂hamodz ִ ࣪𖤐.ᐟ\n╰────────────────────<𝟑 .ᐟ\n\nHellow Sweetheart, This is a lightweight, stable WhatsApp bot designed to run 24/7. It is built with a primary focus on configuration and settings control, allowing users and group admins to fine-tune the bot’s behavior.\n\n₊❏❜ ⋮ Web - https://akira.gotukolaya.site`,
-                            '𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆'
+                            '𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆'
                         )
                     });
                     console.log(`📩 Welcome message sent for ${sanitizedNumber}`);
@@ -913,12 +913,12 @@ const arabianCtxGlobal = {
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid  : '120363419619460838@newsletter',
-    newsletterName : '🎀 𝗔𝗸𝗶𝗿𝗮-𝗠𝗗 | 𝗟𝗞 🇱🇰',
+    newsletterName : '🎀  𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 | 𝗟𝗞 🇱🇰',
     serverMessageId: 143,
   },
   externalAdReply: {
-    title                : '🎀 𝗔𝗸𝗶𝗿𝗮 𝗕𝘆 𝐂𝗵𝗮𝗺𝗼𝗱𝐳 🇱🇰',
-    body                 : '𝐀𝐞𝐬𝐭𝐡𝐚𝐭𝐢𝐜 𝐁𝐨𝐭 𝐐𝐮𝐞𝐞𝐧 💘',
+    title                : '🎀 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 🇱🇰',
+    body                 : '𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 💘',
     thumbnailUrl         : ARABIAN_THUMB_G,
     sourceUrl            : 'mini.gotukolaya.site',
     mediaType            : 1,
@@ -927,8 +927,8 @@ const arabianCtxGlobal = {
 };
 
   // ── Arabian mystery header ──────────────────────────────────────────────────
-  const ARABIAN_TITLE = '🦋 ₊˚ ⊹ 𝐀 𝐊 𝐈 𝐑 𝐀  𝐌 𝐃 ⊹ ˚₊ 𝜗𝜚';
-  const ARABIAN_SUB   = '𝐀𝐞𝐬𝐭𝐡𝐚𝐭𝐢𝐜 𝐁𝐨𝐭 𝐐𝐮𝐞𝐞𝐧 💘';
+  const ARABIAN_TITLE = '🦋 ₊˚ ⊹  𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 ⊹ ˚₊ 𝜗𝜚';
+  const ARABIAN_SUB   = '𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 💘';
 
   const arabianCtx = () => ({
     forwardingScore: 999,
@@ -983,7 +983,7 @@ const downloadQuotedMedia = async (quoted) => {
 
       await socket.sendMessage(sender, {
         image: { url: akira },
-        caption: `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗠𝗲𝗻𝘂 🎀] ¡! ❞*
+        caption: `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝗠𝗲𝗻𝘂 🎀] ¡! ❞*
 
 ┏━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┓
 ┃👤 *𝚄𝚂𝙴𝚁* : ${pushname}
@@ -993,7 +993,7 @@ const downloadQuotedMedia = async (quoted) => {
 ┗━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┛
 
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐌𝐚𝐢𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐌𝐚𝐢𝐧 MINI\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •menu ➜ ɢᴇᴛ ᴄᴍᴅ ʟɪꜱᴛ
 │₊❏❜ ⋮ •system ➜ ɢᴇᴛ ꜱʏꜱᴛᴇᴍ ɪɴꜰᴏ
 │₊❏❜ ⋮ •ping ➜ ɢᴇᴛ ʙᴏᴛ ꜱᴘᴇᴇᴅ
@@ -1001,14 +1001,14 @@ ${readMore}
 │₊❏❜ ⋮ •owner ➜ ɢᴇᴛ ᴏᴡɴᴇʀ ɪɴꜰᴏ
 ╰──────────────────<𝟑 .ᐟ
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐃𝐰𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐃𝐰𝐧 MINI\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •song ➜ ᴅᴏᴡɴʟᴏʀᴅ ꜱᴏɴɢ
 │₊❏❜ ⋮ •video ➜ ᴅᴏᴡɴʟᴏʀᴅ ᴠɪᴅᴇᴏ
 │₊❏❜ ⋮ •fb ➜ ᴅᴏᴡɴʟᴏʀᴅ ꜰʙ ᴠɪᴅᴇᴏ
 │₊❏❜ ⋮ •tt ➜ ᴅᴏᴡɴʟᴏʀᴅ ᴛᴛ ᴠɪᴅᴇᴏ
 ╰──────────────────<𝟑 .ᐟ
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐓𝐨𝐨𝐥 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐓𝐨𝐨𝐥 MINI\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •vv ➜ ᴅᴇᴄʀʏᴘᴛ ᴏɴᴇ ᴛɪᴍᴇ ꜰɪʟᴇ
 │₊❏❜ ⋮ •sticker ➜ ᴄᴏɴᴠᴇᴛʀ ᴛᴏ ꜱᴛᴋ
 │₊❏❜ ⋮ •fancy ➜ ᴄᴏɴᴠᴇᴛ ᴛᴏ ꜰᴀɴᴄʏ ᴛᴇxᴛ
@@ -1018,7 +1018,7 @@ ${readMore}
 │₊❏❜ ⋮ •mode ➜ ᴄʜᴀɴɢᴇ ʙᴏᴛ ᴍᴏᴅᴇ
 ╰──────────────────<𝟑 .ᐟ
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐆𝐫𝐨𝐮𝐩 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐆𝐫𝐨𝐮𝐩 MINI\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •tagall ➜ ᴛᴀɢᴀʟʟ ᴍᴇᴍʙᴇʀꜱ
 │₊❏❜ ⋮ •hidetag ➜ ᴛᴀɢᴀʟʟ ᴍᴇᴍ ꜱɪʟᴇɴᴛʟʏ
 │₊❏❜ ⋮ •add ➜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀ
@@ -1038,17 +1038,17 @@ ${readMore}
 │₊❏❜ ⋮ •leave ➜ ʟᴇᴀᴠᴇ ᴛʜᴇ ɢʀᴏᴜᴘ
 ╰──────────────────<𝟑 .ᐟ
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐀𝐈 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐀𝐈 CHAT\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •akira ➜ ᴀᴋɪʀᴀ ᴀɪ ɢɪʀʟꜰʀɪᴇɴᴅ
 ╰──────────────────<𝟑 .ᐟ
 ${readMore}
-╭─⊹₊⟡⋆『 \`𝐅𝐮𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+╭─⊹₊⟡⋆『 \`𝐅𝐮𝐧 MINI\` 』𖤐.ᐟ
 │₊❏❜ ⋮ •lvcal ➜ ʟᴏᴠᴇ ᴄᴀʟᴄᴜʟᴀᴛᴇʀ
 │₊❏❜ ⋮ •hentai ➜ ɢᴇᴛ ʜᴇɴᴛᴀɪ ᴠɪᴅᴇᴏ(18+)
 │₊❏❜ ⋮ •hack ➜ ꜱᴇɴᴅ ʜᴀᴄᴋɪɴɢ ᴍꜱɢ
 ╰──────────────────<𝟑 .ᐟ
 
-> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`,
+> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`,
         contextInfo: arabianCtx()
       }, { quoted: msg });
 
@@ -1065,7 +1065,7 @@ ${readMore}
 
       await socket.sendMessage(sender, {
         image: { url: akira },
-        caption: `*↳ ❝ [🎀 SHANA 𝗣𝗶𝗻𝗴 🎀] ¡! ❞*\n\n` +
+        caption: `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗣𝗶𝗻𝗴 🎀] ¡! ❞*\n\n` +
 			     `┏━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┓\n` +
                  `┃₊❏❜ ⋮🏓 𝙿𝙾𝙽𝙶 : _pong!_\n` +
                  `┃₊❏❜ ⋮⚡ 𝚂𝙿𝙴𝙴𝙳 : ${ms}ms\n` +
@@ -1088,12 +1088,12 @@ case 'alive': {
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    const title = '*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗔𝗹𝗶𝘃𝗲 🎀] ¡! ❞*';
+    const title = '*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗔𝗹𝗶𝘃𝗲 🎀] ¡! ❞*';
     const content = `*⊹₊⟡⋆ ⋮ Ａｂｏｕｔ ᶻ 𝗓 𐰁 .ᐟ*\n` +
                     `➜ This is a lightweight, stable WhatsApp bot designed to run 24/7. It is allowing users and group admins to fine-tune the bot’s behavior.\n\n` +
                     `*⊹₊⟡⋆ ⋮ Ｄｅｐｌｏｙ ᶻ 𝗓 𐰁 .ᐟ*\n` +
                     `➜ *Website:* https://akira.gotukolaya.site`;
-    const footer = '> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*';
+    const footer = '> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*';
 
     await socket.sendMessage(sender, {
         image: { url: akira },
@@ -1118,16 +1118,16 @@ case 'alive': {
       const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
       const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-      const sysInfo = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗦𝘆𝘀𝘁𝗲𝗺 🎀] ¡! ❞*\n\n` +
+      const sysInfo = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗦𝘆𝘀𝘁𝗲𝗺 🎀] ¡! ❞*\n\n` +
 		              `┏━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┓\n` +
                       `┃ *⏱️ 𝚄𝙿𝚃𝙸𝙼𝙴:* ${uptime}\n` +
-                      `┃ *📟 𝚁𝙰𝙼 𝚄𝚂𝙰𝙶𝙴:* ${ramUsage} MB / ${totalRam} GB\n` +
+                      `┃ *📟 𝚁𝙰𝙼 𝚄𝚂𝙰𝙶𝙴:* ${ramUsage} MB / ${totalRam} MB\n` +
                       `┃ *📦 𝙽𝙾𝙳𝙴 𝚅𝙴𝚁:* ${nodeVersion}\n` +
                       `┃ *💻 𝙿𝙻𝙰𝚃𝙵𝙾𝚁𝙼:* ${platform}\n` +
                       `┃ *📅 𝙳𝙰𝚃𝙴:* ${slDate}\n` +
                       `┃ *⌚ 𝚃𝙸𝙼𝙴:* ${slTimeNow}\n` +
 		              `┗━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┛\n\n` +
-                      `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                      `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
       await socket.sendMessage(sender, {
         image: { url: akira },
@@ -1156,14 +1156,14 @@ case 'ytmp3': {
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        const caption = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
+        const caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
                         `> *\`🎵 𝚃𝙸𝚃𝙻𝙴 :\`* ${video.title}\n` +
                         `> *\`👤 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 :\`* ${video.author.name}\n` +
                         `> *\`⏱️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 :\`* ${video.timestamp}\n` +
                         `> *\`👀 𝚅𝙸𝙴𝚆𝚂 :\`* ${video.views.toLocaleString()}\n` +
                         `> *\`📅 𝙳𝙰𝚃𝙴 :\`* ${slDate}\n` +
                         `> *\`⌚ 𝚃𝙸𝙼𝙴 :\`* ${slTimeNow}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                        `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, {
             image: { url: video.thumbnail },
@@ -1211,14 +1211,14 @@ case 'playvid': {
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        let caption = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
+        let caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
                         `🎬 *TITLE :* ${video.title}\n` +
                         `👤 *CHANNEL :* ${video.author.name}\n` +
                         `⏱️ *DURATION :* ${video.timestamp}\n` +
                         `📽️ *QUALITY :* 360p\n` +
                         `__________________________\n\n` +
                         `📅 *DATE :* ${slDate} | ⌚ *TIME :* ${slTimeNow}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                        `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         try { await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } }); } catch (_) {}
 
@@ -1287,14 +1287,14 @@ case 'facebook': {
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        const caption = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 🎀] ¡! ❞*\n\n` +
+        const caption = `*↳ ❝ [🎀  𝑺𝑯𝑨𝑵𝑨 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 🎀] ¡! ❞*\n\n` +
                         `🎬 *TITLE :* ${videoData.title !== "No video title" ? videoData.title : 'Facebook Video'}\n` +
                         `⏱️ *DURATION :* ${videoData.duration}\n` +
                         `📺 *QUALITY :* ${quality}\n` +
                         `⚖️ *SIZE :* ${fileSizeMB} MB\n` +
                         `__________________________\n\n` +
                         `📅 *DATE :* ${slDate} | ⌚ *TIME :* ${slTimeNow}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                        `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, {
             video: videoBuffer,
@@ -1348,13 +1348,13 @@ case 'tt': {
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        const caption = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗧𝗶𝗸𝗧𝗼𝗸 🎀] ¡! ❞*\n\n` +
+        const caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗧𝗶𝗸𝗧𝗼𝗸 🎀] ¡! ❞*\n\n` +
                         `🎬 *TITLE :* ${videoData.title || 'TikTok Video'}\n` +
                         `⚖️ *SIZE :* ${fileSizeMB} MB\n` +
                         `🚫 *WATERMARK :* No\n` +
                         `__________________________\n\n` +
                         `📅 *DATE :* ${slDate} | ⌚ *TIME :* ${slTimeNow}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                        `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, {
             video: videoBuffer,
@@ -1379,8 +1379,8 @@ case 'ai':
 case 'akira': {
     try { await socket.sendMessage(sender, { react: { text: '🍫', key: msg.key } }); } catch (_) {}
     const { NiyoXClient } = require("niyox");
-    const title = "🎀 *𝗔𝗸𝗶𝗿𝗮 𝗔𝗶 𝗚𝗶𝗿𝗹𝗳𝗿𝗲𝗻𝗱* 🎀";
-    const footer = "> *𝐀𝐞𝐬𝐭𝐡𝐚𝐭𝐢𝐜 𝐐𝐮𝐞𝐞𝐧 𝐁𝐲 𝐂𝐡𝐚𝐦𝐨𝐝 🌺*";
+    const title = "🎀 * 𝑺𝑯𝑨𝑵𝑨 𝗔𝗶 * 🎀";
+    const footer = "> *𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰  🌺*";
 
     // ✅ Get user input from various message types
     const q = msg.message?.conversation || 
@@ -1390,7 +1390,7 @@ case 'akira': {
               '';
 
     if (!q || q.trim() === '') {
-        return await socket.sendMessage(sender, { text: "ඕ කියන්න අනේ් මම Akira Girl 🎀" }, { quoted: msg });
+        return await socket.sendMessage(sender, { text: "ඕ කියන්න අනේ් මම SHANA Girl 🎀" }, { quoted: msg });
     }
 
     const prompt = `ඔබ සැබෑ ගැහැනු ලමයෙකු මෙන් හැසිරිය යුතුය. ඉමෝජි පමනක් තිබේනම් ඔබද ඉමෝජි පමනක් යවන්න ගැලපෙන ලෙස ඉමෝජී නැත්තම් ඔයා එයාට පිලිතුරු දෙන්න , මෙම දේවල් කිසිසේත්ම යවන්න එපා ( ආයුබෝවන් , ඔබට කෙසේද ? , katha karanna , ඕනේ ? , කොහොමද ? , කෙසේද ? , කැමතිද ? ,) මිනිසුන්ට ඇති හැඟීම්, දැනීම්, සහ සංවේදීතාවය අනුව පිළිතුරු ලබාදිය යුතුය. මැසේජ් එක ලැබෙන භාෂාවට ගැලපෙන ලෙස පිළිතුරු දෙන්න. ඔබ ලබාදිය යුතු පිළිතුරු අකුරු 100 ට වඩා අඩු විය යුතුය. සහ ආයුබෝවන් වගේ වචන බාවිතා කරන්න එපා උදව් අවශ්‍ය  ද අහන්නත් එපා , ඔයා ai ඇසිස්ටන් කෙනෙක් නෙමේ සැබෑ මිනිසෙක් , ඇසිස්ටන් කෙනෙක් වෙන්න එපා , ඔයා ඒ අයට ආදරෙන් කතා කරන්න , ඔයා ගේ නම Akira Girl 🎀 , ඔයාගෙන් කවුරු හරි දෙයක් ඇහුවාම ඒක තේරුම් අරගෙන මම දීලා තියෙන පිලිතුරු ඒවට ගැලපෙනවා නම් ඔයා එයාට ඒවා පිලිතුරු විදිහට කියන්න ,  ඔයාව හැදුවේ කවුද කියලා ඇහුවොත් විතරක් ඔයා කියන්නේ මාව හැදුවේ Chamod අයියා කියලා User Message: ${q}`;
@@ -1453,10 +1453,10 @@ case 'vv': {
       const sockets = typeof activeSockets !== 'undefined' ? activeSockets : new Map();
       const nums = Array.from(sockets.keys());
       
-      const responseText = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗦𝗲𝘀𝘀𝗶𝗼𝗻𝘀 🎀] ¡! ❞*\n\n` +
+      const responseText = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗦𝗲𝘀𝘀𝗶𝗼𝗻𝘀 🎀] ¡! ❞*\n\n` +
                            `> *\`📡 𝙲𝙾𝚄𝙽𝚃 :\`* ${nums.length}\n\n` +
                            `${nums.map((n, i) => `> *\`${i + 1}.\`* +${n}`).join('\n')}\n\n` +
-                           `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                           `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
                            
       await reply(responseText);
       break;
@@ -1473,14 +1473,14 @@ case 'vv': {
         const res = await axios.get(`https://registry.npmjs.org/${pkg}`, { timeout: 10000 });
         const d = res.data;
         
-        const npmInfo = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗡𝗣𝗠 🎀] ¡! ❞*\n` +
+        const npmInfo = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗡𝗣𝗠 🎀] ¡! ❞*\n` +
                         `⊹₊⟡⋆ 𝗡𝗮𝗺𝗲 - ${d.name} 𝜗𝜚⋆\n\n` +
                         `> *\`📦 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :\`* ${d['dist-tags']?.latest || 'N/A'}\n` +
                         `> *\`📝 𝙳𝙴𝚂𝙲 :\`* ${(d.description || 'N/A').slice(0, 100)}\n` +
                         `> *\`👤 𝙰𝚄𝚃𝙷𝙾𝚁 :\`* ${d.author?.name || 'N/A'}\n` +
                         `> *\`📄 𝙻𝙸𝙲𝙴𝙽𝚂𝙴 :\`* ${d.license || 'N/A'}\n` +
                         `> *\`🔗 𝙻𝙸𝙽𝙺 :\`* https://npmjs.com/package/${d.name}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+                        `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, { 
           image: { url: akira },
@@ -1559,11 +1559,11 @@ case 'img': {
         {
           image: { url: imgUrl },
           caption:
-`*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗜𝗠𝗚𝘀 🎀] ¡! ❞*
+`*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗜𝗠𝗚𝘀 🎀] ¡! ❞*
 
 *₊❏❜ ⋮ 🔍 Search:* ${q}
 
-> *𝗔esthetic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`
+> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`
         },
 		  { quoted: msg }
       );
@@ -1603,7 +1603,7 @@ case 'img': {
 
         await socket.sendMessage(sender, { 
           image: { url: dpUrl }, 
-          caption: `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗗𝗣 🎀] ¡! ❞*\n\n📷 Profile picture of @${target.split('@')[0]}`, 
+          caption: `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗗𝗣 🎀] ¡! ❞*\n\n📷 Profile picture of @${target.split('@')[0]}`, 
           mentions: [target] 
         }, { quoted: msg });
 
@@ -1664,9 +1664,9 @@ case 'img': {
         const ps       = gm.participants || [];
         const tm       = args.join(' ').trim() || '*Attention everyone!*';
         const mentions = ps.map(p => p.id);
-        let text = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗧𝗮𝗴𝗮𝗹𝗹 🎀] ¡! ❞*\n\n> *\`🗣️ :\`* ${tm}\n\n`;
+        let text = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗧𝗮𝗴𝗮𝗹𝗹 🎀] ¡! ❞*\n\n> *\`🗣️ :\`* ${tm}\n\n`;
         for (const p of ps) text += `₊❏❜ ⋮ @${p.id.split('@')[0]}\n`;
-        text += `\n> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+        text += `\n> * 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
         await socket.sendMessage(sender, { text, mentions }, { quoted: msg });
       } catch (e) { await reply(`tagall failed: ${e.message}`); }
       break;
@@ -1761,7 +1761,7 @@ case 'add': {
         const mentions = admins.map(p => p.id);
         let text = `╭─⊹₊⟡⋆『 \`𝐀𝐝𝐦𝐢𝐧\` 』𖤐.ᐟ\n*┃* ${tm}\n*┃*\n`;
         for (const p of admins) text += `*┃* @${p.id.split('@')[0]}\n`;
-        text += `╰──────────────────<𝟑 .ᐟ\n\n> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+        text += `╰──────────────────<𝟑 .ᐟ\n\n> * 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
         await socket.sendMessage(sender, { text, mentions }, { quoted: msg });
       } catch (e) { await replyFq(`tagadmin failed: ${e.message}`); }
       break;
@@ -1849,14 +1849,14 @@ case 'add': {
         const admCnt  = gm.participants.filter(p => p.admin).length;
         const created = gm.creation ? new Date(gm.creation * 1000).toLocaleDateString() : 'Unknown';
         await reply(
-          `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗚𝗜𝗻𝗳𝗼 🎀] ¡! ❞*\n\n` +
+          `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗚𝗜𝗻𝗳𝗼 🎀] ¡! ❞*\n\n` +
           `₊❏❜ ⋮ *\`📛 𝙽𝙰𝙼𝙴 :\`* ${gm.subject}\n` +
           `₊❏❜ ⋮ *\`🆔 𝙹𝙸𝙳 :\`* ${gm.id}\n` +
           `₊❏❜ ⋮ *\`📝 𝙳𝙴𝚂𝙲 :\`* ${(gm.desc || 'None').slice(0, 100)}\n` +
           `₊❏❜ ⋮ *\`👥 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 :\`* ${total}\n` +
           `₊❏❜ ⋮ *\`👑 𝙰𝙳𝙼𝙸𝙽𝚂 :\`* ${admCnt}\n` +
           `₊❏❜ ⋮ *\`📅 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 :\`* ${created}\n\n` +
-          `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`
+          `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`
         );
       } catch (e) { await reply(`groupinfo failed: ${e.message}`); }
       break;
@@ -1975,7 +1975,7 @@ case 'hentai': {
 *₊❏❜ ⋮ 📁 Category:* ${randomVideo.category}
 *₊❏❜ ⋮ 👁️ Views:* ${randomVideo.views_count}
 
-> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`
+> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`
         }, 
         { quoted: msg }
       );
@@ -2027,7 +2027,7 @@ case 'fancytext': {
         });
         
         styledMsg += `*┗━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┛*\n\n`;
-        styledMsg += `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+        styledMsg += `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, { 
 			image: { url: akira }, 
@@ -2048,8 +2048,8 @@ case 'fancytext': {
 // ════════════ OWNER ════════════
 
                 case 'owner': {
-    const ownerNum = '+94707447414';
-    const ownerName = 'お 𝐂𝐡𝐚𝐦𝐨𝐝 ࣪𖤐.ᐟ';
+    const ownerNum = '+94728348795';
+    const ownerName = 'お  𝑺𝑯𝑨𝑵𝑨 ࣪𖤐.ᐟ';
     
     await socket.sendMessage(sender, { react: { text: '🥷', key: msg.key } });
 
@@ -2058,13 +2058,13 @@ case 'fancytext': {
         contacts: {
             displayName: ownerName,
             contacts: [{
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${ownerName}\nORG:𝐀𝐤𝐢𝐫𝐚 𝐗 𝐎𝐰𝐧𝐞𝐫;\nTEL;type=CELL;type=VOICE;waid=${ownerNum.slice(1)}:${ownerNum}\nEND:VCARD`
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${ownerName}\nORG:> 𝑺𝑯𝑨𝑵𝑨;\nTEL;type=CELL;type=VOICE;waid=${ownerNum.slice(1)}:${ownerNum}\nEND:VCARD`
             }]
         }
     });
 
     await socket.sendMessage(sender, {
-        text: `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗢𝘄𝗻𝗲𝗿 🎀] ¡! ❞*\n\n₊❏❜ ⋮👤 Name: ${ownerName}\n₊❏❜ ⋮ 📞 Number: ${ownerNum}\n\n> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`,
+        text: `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗢𝘄𝗻𝗲𝗿 🎀] ¡! ❞*\n\n₊❏❜ ⋮👤 Name: ${ownerName}\n₊❏❜ ⋮ 📞 Number: ${ownerNum}\n\n> *𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`,
         contextInfo: {
             mentionedJid: [`${ownerNum.slice(1)}@s.whatsapp.net`]
         }
@@ -2108,7 +2108,7 @@ case 'lvcal': {
         else if (percentage >= 30) hearts = '💖💖';
         else hearts = '💖';
 
-        let shipText = `*↳ ❝ [🎀 𝗔𝗸𝗶𝗿𝗮 𝗚𝗶𝗿𝗹 𝗟𝘃𝗖𝗮𝗹 🎀] ¡! ❞*\n\n`;
+        let shipText = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗟𝘃𝗖𝗮𝗹 🎀] ¡! ❞*\n\n`;
         shipText += `*${name1}* 💑 *${name2}*\n\n`;
         shipText += `${hearts}\n`;
         shipText += `*Love Percentage:* ${percentage}%\n\n`;
@@ -2119,7 +2119,7 @@ case 'lvcal': {
         else if (percentage >= 20) shipText += `*Needs Work! 🤔💔*`;
         else shipText += `*Not Meant To Be! 😢💔*`;
         
-        shipText += `\n\n> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`;
+        shipText += `\n\n> * 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`;
 
         await socket.sendMessage(sender, { text: shipText }, { quoted: msg });
         await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } });
@@ -2137,7 +2137,7 @@ case 'hack': {
     try {
         const from = msg.key.remoteJid; 
         const steps = [
-            '🎀 *𝐀𝐤𝐢𝐫𝐚 𝐇𝐚𝐜𝐤 𝐒𝐭𝐚𝐫𝐢𝐧𝐠...* 🎀',
+            '🎀 *𝑺𝑯𝑨𝑵𝑨 𝐇𝐚𝐜𝐤 𝐒𝐭𝐚𝐫𝐢𝐧𝐠...* 🎀',
             '`ɪɴɪᴛɪᴀʟɪᴢɪɴɢ ʜᴀᴄᴋɪɴɢ ᴛᴏᴏʟꜱ...` 🛠️',
             '`ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ʀᴇᴍᴏᴛᴇ ꜱᴇʀᴠᴇʀ...` 🌐',
             '```[##] 20%``` ⏳',
@@ -2146,7 +2146,7 @@ case 'hack': {
             '```[########] 80%``` ⏳',
             '```[##########] 100%``` ✅',
             '🔒 *𝐒ystem 𝐁reach: 𝐒uccessful!* 🔓',
-            '*🎀 𝐀kira 𝐇acking 𝐒uccessful 🎭*',
+            '*🎀 SHANA 𝐇acking 𝐒uccessful 🎭*',
         ];
 
         await socket.sendMessage(from, { react: { text: '💀', key: msg.key } });
