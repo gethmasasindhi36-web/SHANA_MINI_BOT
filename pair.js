@@ -83,7 +83,7 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     OWNER_NUMBER: '94761480834',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAp1d6HVvTSFTYtco0T'
+    CHANNEL_LINK: 'https://files.catbox.moe/3pkc0h.jpg'
 };
 
 const replyFq = (text) => reply(text);
@@ -907,7 +907,7 @@ function getUptime() {
     return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 		
-const ARABIAN_THUMB_G = 'https://files.catbox.moe/5ztdoe.jpeg';
+const ARABIAN_THUMB_G = 'https://files.catbox.moe/3pkc0h.jpg';
 const arabianCtxGlobal = {
   forwardingScore: 999,
   isForwarded: true,
