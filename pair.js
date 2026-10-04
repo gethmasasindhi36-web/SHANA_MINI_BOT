@@ -1071,7 +1071,7 @@ ${readMore}
                  `┃₊❏❜ ⋮⚡ 𝚂𝙿𝙴𝙴𝙳 : ${ms}ms\n` +
                  `┃₊❏❜ ⋮⏱️ 𝚄𝙿𝚃𝙸𝙼𝙴 : ${getUptime()}\n` +
 			     `┗━━━━━°⌜ \`赤い糸 ⌟°━━━━━┛\n\n` +
-                 `> *𝗔esthatic 𝗤ueen 𝗕y 𝗖hamod 𝜗𝜚⋆*`,
+                 `> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*`,
         contextInfo: arabianCtx()
       }, { quoted: msg });
 
