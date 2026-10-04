@@ -25,7 +25,7 @@ app.use('/', async (req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`╔═══════════════════════════╗`);
-  console.log(`║  Akira Bot — ONLINE  Port: ${PORT}   ║`);
+  console.log(`║  SHANA BOT — ONLINE  Port: ${PORT}   ║`);
   console.log(`╚═══════════════════════════╝`);
 });
 
