@@ -753,11 +753,11 @@ async function EmpirePair(number, res) {
                             console.error("Newsletter list error:", newsletterError);
                         }
 
-                    await socket.sendMessage(userJid, {
+                   await socket.sendMessage(userJid, {
                         image: { url: config.AKIRA_IMG },
                         caption: formatMessage(
-                            '`*↳ ❝ [🎀 𝗪𝗲𝗹𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰  🎀] ¡! ❞*`',
-                            `╭─────⊹₊⟡⋆ 𝐈𝐧𝐟𝐨 ⋆⟡₊⊹─────<𝟑 .ᐟ\n┊ 𝜗𝜚⋆ : 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 - V1.0.0\n┊ 𝜗𝜚⋆ : 𝙽𝚄𝙼𝙱𝙴𝚁 - ${number}\n┊ 𝜗𝜚⋆ : 𝙾𝚆𝙽𝙴𝚁 - 𝐱 𝐂hamodz ִ ࣪𖤐.ᐟ\n╰────────────────────<𝟑 .ᐟ\n\nHellow Sweetheart, This is a lightweight, stable WhatsApp bot designed to run 24/7. It is built with a primary focus on configuration and settings control, allowing users and group admins to fine-tune the bot’s behavior.\n\n₊❏❜ ⋮ Web - https://akira.gotukolaya.site`,
+                            '*↳ ❝ [🎀 𝗪𝗲𝗹𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰  🎀] ¡! ❞*',
+                            `╭─────⊹₊⟡⋆ 𝐈𝐧𝐟𝐨 ⋆⟡₊⊹─────<𝟑 .ᐟ\n┊ 𝜗𝜚⋆ : 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 - V1.0.0\n┊ 𝜗𝜚⋆ : 𝙽𝚄𝙼𝙱𝙴𝚁 - ${number}\n┊ 𝜗𝜚⋆ : 𝙾𝚆𝙽𝙴𝚁 - 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰  ִ ࣪𖤐.ᐟ\n╰────────────────────<𝟑 .ᐟ\n\n 𝑵𝑶𝑾 𝑺𝑯𝑨𝑵𝑨 𝑺𝒀𝑺𝑻𝑬𝑴 𝑶𝑵𝑳𝑰𝑵𝑬 💀.𝑯𝒀 𝑩𝑨𝑩𝒀 🥵.                                                                                                                                    \n\n₊❏❜ ⋮ Web - https://shanaminibot-production.up.railway.app/`,
                             '𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆'
                         )
                     });
