@@ -28,7 +28,7 @@ const ffmpegPath = require("ffmpeg-static");
 ffmpeg.setFfmpegPath(ffmpegPath);
   const images = [
     'https://i.ibb.co/FZjptLY/tourl-1779693358137.jpg',
-    'https://i.ibb.co/nsvyKzHq/tourl-1779693358584.jpg',
+    'https://files.catbox.moe/3pkc0h.jpg',
     'https://i.ibb.co/nqr1zs58/tourl-1779693359381.jpg',
     'https://i.ibb.co/hFgRrkHG/tourl-1779693362084.jpg',
     'https://i.ibb.co/b5BGG3qy/tourl-1779693381594.jpg',
