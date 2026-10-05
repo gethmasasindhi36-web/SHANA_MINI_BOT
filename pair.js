@@ -1149,14 +1149,14 @@ case 'ytmp3': {
         try { await socket.sendMessage(sender, { react: { text: '🔎', key: msg.key } }); } catch (_) {}
 
         const search = await yts(query);
-        const video = search.videos[0]; 
+        const video = search.videos[0];
 
         if (!video) return reply("❌ *I Cant Find It !*");
 
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        const caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
+        const caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗦𝗼𝗻𝗴 🎀] ¡! ❞*\n\n` +
                         `> *\`🎵 𝚃𝙸𝚃𝙻𝙴 :\`* ${video.title}\n` +
                         `> *\`👤 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 :\`* ${video.author.name}\n` +
                         `> *\`⏱️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 :\`* ${video.timestamp}\n` +
@@ -1171,13 +1171,23 @@ case 'ytmp3': {
             contextInfo: arabianCtx()
         }, { quoted: msg });
 
-        const ytRes = await axios.get(`https://ytdl-new-dxz.vercel.app/api/ytmp3?url=${encodeURIComponent(video.url)}`);
-        const downloadUrl = ytRes.data.download_url || ytRes.data.result || ytRes.data.url;
+        // ── Direct download via @distube/ytdl-core ──
+        const ytdl = require('@distube/ytdl-core');
+        const stream = ytdl(video.url, {
+            filter: 'audioonly',
+            quality: 'highestaudio',
+            highWaterMark: 64 * 1024 * 1024
+        });
 
-        if (!downloadUrl) return reply("❌ *I cant get MP3 !*");
+        const audioBuffer = await new Promise((resolve, reject) => {
+            const chunks = [];
+            stream.on('data', c => chunks.push(c));
+            stream.on('end', () => resolve(Buffer.concat(chunks)));
+            stream.on('error', reject);
+        });
 
         await socket.sendMessage(sender, {
-            audio: { url: downloadUrl },
+            audio: audioBuffer,
             mimetype: 'audio/mpeg',
             ptt: false
         }, { quoted: msg });
@@ -1190,7 +1200,6 @@ case 'ytmp3': {
     }
     break;
 }
-
 					
 // ════════════ VIDEO ════════════
 
