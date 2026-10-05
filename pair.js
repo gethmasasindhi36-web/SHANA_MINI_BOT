@@ -1039,7 +1039,7 @@ ${readMore}
 ╰──────────────────<𝟑 .ᐟ
 
 ╭─⊹₊⟡⋆『 \`𝐀𝐈 CHAT\` 』𖤐.ᐟ
-│₊❏❜ ⋮ •SHANA ➜ SHANA ᴀɪ ɢɪʀʟꜰʀɪᴇɴᴅ
+│₊❏❜ ⋮ •shana ai ➜ SHANA ᴀɪ ɢɪʀʟꜰʀɪᴇɴᴅ
 ╰──────────────────<𝟑 .ᐟ
 
 ╭─⊹₊⟡⋆『 \`𝐅𝐮𝐧 MINI\` 』𖤐.ᐟ
@@ -1092,7 +1092,7 @@ case 'alive': {
     const content = `*⊹₊⟡⋆ ⋮ Ａｂｏｕｔ ᶻ 𝗓 𐰁 .ᐟ*\n` +
                     `➜ This is a lightweight, stable WhatsApp bot designed to run 24/7. It is allowing users and group admins to fine-tune the bot’s behavior.\n\n` +
                     `*⊹₊⟡⋆ ⋮ Ｄｅｐｌｏｙ ᶻ 𝗓 𐰁 .ᐟ*\n` +
-                    `➜ *Website:* https://akira.gotukolaya.site`;
+                    `➜ *Website:* https://shanaminibot-production.up.railway.app/`;
     const footer = '> 𝑺𝑯𝑨𝑵𝑨 𝑴𝑰𝑵𝑰 𝑩𝑶𝑻 𝜗𝜚⋆*';
 
     await socket.sendMessage(sender, {
@@ -1639,7 +1639,7 @@ case 'img': {
 
         const sticker = new WASticker(media.buffer, { 
           pack: botName, 
-          author: 'chamodz', 
+          author: 'Shana', 
           type: StickerTypes.FULL, 
           categories: ['🤩'], 
           id: '12345', 
