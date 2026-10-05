@@ -1265,44 +1265,16 @@ case 'facebook': {
 
         try { await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } }); } catch (_) {}
 
-        // ── Multi-API fallback ──
-        const apis = [
-            {
-                url: `https://api.dreaded.site/api/fbdown?url=${encodeURIComponent(query)}`,
-                parse: d => d?.video?.hd || d?.video?.sd || d?.videoUrl || d?.url
-            },
-            {
-                url: `https://api.zenzxz.my.id/download/fb?url=${encodeURIComponent(query)}`,
-                parse: d => d?.data?.hd || d?.data?.sd || d?.data?.url
-            },
-            {
-                url: `https://www.movanest.xyz/v2/fbdown?url=${encodeURIComponent(query)}`,
-                parse: d => d?.results?.[0]?.hdQualityLink || d?.results?.[0]?.normalQualityLink
-            }
-        ];
+        const fbRes = await axios.get(
+            `https://fbdown.vercel.app/api/get?url=${encodeURIComponent(query)}`,
+            { timeout: 30000 }
+        );
 
-        let videoUrl = null, videoData = {};
-
-        for (const api of apis) {
-            try {
-                const res = await axios.get(api.url, { timeout: 20000 });
-                const link = api.parse(res.data);
-                if (link && link.startsWith('http')) {
-                    videoUrl = link;
-                    videoData = res.data;
-                    break;
-                }
-            } catch (_) { /* try next API */ }
-        }
-
-        if (!videoUrl) {
-            try { await socket.sendMessage(sender, { react: { text: '❌', key: msg.key } }); } catch (_) {}
-            return reply("❌ *All FB APIs failed ! Try again later.*");
-        }
+        const videoUrl = fbRes.data.hd || fbRes.data.sd;
+        if (!videoUrl) return reply("❌ *I cant get video link !*");
 
         const response = await axios.get(videoUrl, {
             responseType: 'arraybuffer',
-            timeout: 0,
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
             }
@@ -1315,6 +1287,7 @@ case 'facebook': {
 
         const caption = `*↳ ❝ [🎀 𝑺𝑯𝑨𝑵𝑨 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 🎀] ¡! ❞*\n\n` +
                         `🎬 *TITLE :* Facebook Video\n` +
+                        `📺 *QUALITY :* ${fbRes.data.hd ? 'HD (720p)' : 'SD'}\n` +
                         `⚖️ *SIZE :* ${fileSizeMB} MB\n` +
                         `__________________________\n\n` +
                         `📅 *DATE :* ${slDate} | ⌚ *TIME :* ${slTimeNow}\n\n` +
